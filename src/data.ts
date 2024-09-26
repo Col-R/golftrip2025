@@ -6,50 +6,63 @@ export interface Course {
     description: string;
     reservationInfo: string;
     awesomeLevel: number;
-    address: string;
+    website: string;
+    
 }
 
 export const courses: Course[] = [
     {
         id: 1,
         name: "Payne's Valley",
-        image: 'https://placehold.co/400x200',
+        image: 'https://bigcedar.com/wp-content/uploads/2020/10/Paynes-Valley-19th-hole.jpg',
         price: 215,
         description: "Payne's Valley, the 19TH Wonder of the World™, is an homage to Ozarks-native and World Golf Hall of Fame member, Payne Stewart. It is the first public-access golf course designed by 82-time PGA TOUR winner, Tiger Woods and his golf course design firm, TGR Design.",
-        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests.',
+        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests of Big Cedar Lodge.',
         awesomeLevel: 10,
-        address: '123 Main St, City, Country'
+        website: 'https://bigcedar.com/golf/paynes-valley-course/'
+    },
+    {
+        id: 5,
+        name: "Ozarks National",
+        image: 'https://bigcedar.com/wp-content/uploads/2019/03/ozarks-national-header.jpg',
+        price: 165,
+        description: "Among the world-class courses that Big Cedar Lodge offers, is Ozarks National, Missouri's first and only golf course designed by architect duo, Bill Coore and Ben Crenshaw. Measuring 7,036 yards from the back tees, this 18-hole course represents all of what the Ozarks terrain has to show.",
+        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests of Big Cedar Lodge.',
+        awesomeLevel: 10,
+        website: 'https://bigcedar.com/golf/ozarks-national-course/'
     },
     {
         id: 2,
-        name: 'Ozarks National',
-        image: 'image2.jpg',
-        price: 165,
-        description: 'sick ass course',
-        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests.',
+        name: "Ledgestone",
+        image: 'https://images.squarespace-cdn.com/content/v1/54db9e03e4b030e420e8bbc0/1540309892375-I5WNIHF8B6LB5QP9PSSD/BGA_LS_Hole15Tee+copy.jpg',
+        price: 69,
+        description: "A combination of strategy and consideration for natural design, this dramatic Tom Clark layout features distinct elevation changes that require accurate shot shaping and distance control.",
+        reservationInfo: 'Bookable 30 days in advance.',
         awesomeLevel: 8,
-        address: '456 Elm St, City, Country'
+        website: 'https://www.ledgestonegolf.com/'
     },
     {
         id: 3,
-        name: 'Course 3',
-        image: 'image3.jpg',
-        price: 200,
-        description: 'sick ass course',
-        reservationInfo: 'Available',
-        awesomeLevel: 10,
-        address: '789 Oak St, City, Country'
+        name: "Buffalo Ridge",
+        image: 'https://bigcedar.com/wp-content/uploads/2019/03/buffalo-ridge-springs-golf-course-hole-2.jpg',
+        price: 165,
+        description: "Praised as a top golf course in the region, the 18-hole championship course showcases the charm of the Ozarks with rich native grasses, natural rock formations, caves and creeks, lakes and waterfalls and free-ranging North American bison from nearby Dogwood Canyon Nature Park.",
+        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests of Big Cedar Lodge.',
+        awesomeLevel: 9,
+        website: 'https://bigcedar.com/golf/buffalo-ridge-springs-course/'
     },
     {
         id: 4,
-        name: 'Course 3',
-        image: 'image3.jpg',
-        price: 200,
-        description: 'sick ass course',
-        reservationInfo: 'Available',
-        awesomeLevel: 10,
-        address: '789 Oak St, City, Country'
+        name: "Thousand Hills",
+        image: 'https://www.golfbranson.com/wp-content/uploads/2015/05/Branson-Mo-Golf-Course-Resort-Thousand-Hills-Par-Three.jpg',
+        price: 50,
+        description: "The golf course at the Thousand Hills Golf Resort in Branson, Missouri is known far and wide as the most popular golf resort in town for good reason.  As your golf journey takes you through beautiful hardwood forests, past unique rock formations, and over Ozark streams you would never guess that you were within a long iron from the 76 strip and Branson's world-famous live music shows.",
+        reservationInfo: 'Bookable 30 days in advance.',
+        awesomeLevel: 7,
+        website: 'https://www.thousandhills.com/branson-golf/'
     },
+
+
 ];
 
 export interface Hotel {
