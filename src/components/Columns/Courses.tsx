@@ -1,4 +1,4 @@
-// import {Course} from './../data.ts'
+
 import {courses} from '../../data.ts'
 
 
@@ -18,7 +18,7 @@ const Courses = () => {
 
                 <div className="flex items-center justify-between">
                   <h2 className="text-2xl font-semibold">{course.name}</h2>
-                  <span className="bg-green-700 text-white text-sm font-semibold py-1 px-3 rounded-full">{course.awesomeLevel} ★</span>
+                  <span className="bg-green-700 text-nowrap text-white text-sm font-semibold py-1 px-3 rounded-full">{course.awesomeLevel} ★</span>
                 </div>
 
                 <p className="text-md mx-1 italic border-x-2 p-2">{course.description}</p>

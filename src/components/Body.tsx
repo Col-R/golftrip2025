@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-import Courses from './Columns/Course';
+import Courses from './Columns/Courses';
 import Hotels from './Columns/Hotels';
 import Cars from './Columns/Cars';
 import Dates from './Columns/Dates';

@@ -68,33 +68,54 @@ export const courses: Course[] = [
 export interface Hotel {
     id: number;
     name: string;
+    thoughts?: string;
+    image: string;
     price: number;
     address: string;
+    rating: number;
     link: string;
 }
 
 export const hotels: Hotel[] = [
     {
         id: 1,
-        name: 'Hotel Sunshine',
-        price: 120,
-        address: '321 Beach Rd, City, Country',
-        link: 'http://hotelsunshine.com'
+        name: 'Hyatt Vacation Club at the Lodges',
+        thoughts: "This would probably be my choice. We can get a 2 Bedroom Villa with Kitchen, Living Room, 2 Bed, and 1 sofa bed for a good price. We'll each have our own space and plenty of room to chill.",
+        image: 'https://th.bing.com/th/id/OIP.2_JCEzVdx__bKO0Vjc3uWgAAAA?rs=1&pid=ImgDetMain',
+        price: 200,
+        address: '147 Welk Resort Circle, Branson, MO',
+        rating: 4,
+        link: 'https://www.hyatt.com/en-US/hotel/missouri/hyatt-vacation-club-at-the-lodges-at-timber-ridge/sgfsl'
     },
     {
         id: 2,
-        name: 'Mountain Retreat',
-        price: 180,
-        address: '654 Hill St, City, Country',
-        link: 'http://mountainretreat.com'
+        name: 'Big Cedar Lodge',
+        image: 'https://www.thesunshinehotel.com/wp-content/uploads/2019/12/Hotel-Sunshine-Exterior-1.jpg',
+        price: 120,
+        address: '321 Beach Rd, City, Country',
+        rating: 5,
+        link: 'http://hotelsunshine.com'
     },
     {
         id: 3,
-        name: 'City Central Hotel',
-        price: 200,
-        address: '987 Downtown Ave, City, Country',
-        link: 'http://citycentralhotel.com'
-    }
+        name: 'Still Waters Resort',
+        image: 'https://images.trvl-media.com/hotels/1000000/430000/425400/425339/74e518d1_z.jpg',
+        price: 161,
+        address: '21 Stillwater, Branson, MO',
+        rating: 3,
+        link: 'https://www.stillwatersresort.com/'
+    },
+
+    {
+        id: 5,
+        name: 'Club Wyndham Branson at The Meadows',
+        image: 'https://www.thesunshinehotel.com/wp-content/uploads/2019/12/Hotel-Sunshine-Exterior-1.jpg',
+        price: 141,
+        address: '110 Willow Bend Dr, Branson, MO',
+        rating: 3.5,
+        link: 'http://hotelsunshine.com'
+    },
+
 ];
 
 export interface DateSpan {
