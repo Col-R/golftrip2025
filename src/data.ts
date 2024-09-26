@@ -1,7 +1,9 @@
 export interface Course {
     id: number;
+    name: string
     image: string;
     price: number;
+    description: string;
     reservationInfo: string;
     awesomeLevel: number;
     address: string;
@@ -10,28 +12,44 @@ export interface Course {
 export const courses: Course[] = [
     {
         id: 1,
-        image: 'image1.jpg',
-        price: 100,
-        reservationInfo: 'Available',
-        awesomeLevel: 9,
+        name: "Payne's Valley",
+        image: 'https://placehold.co/400x200',
+        price: 215,
+        description: "Payne's Valley, the 19TH Wonder of the World™, is an homage to Ozarks-native and World Golf Hall of Fame member, Payne Stewart. It is the first public-access golf course designed by 82-time PGA TOUR winner, Tiger Woods and his golf course design firm, TGR Design.",
+        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests.',
+        awesomeLevel: 10,
         address: '123 Main St, City, Country'
     },
     {
         id: 2,
+        name: 'Ozarks National',
         image: 'image2.jpg',
-        price: 150,
-        reservationInfo: 'Booked',
+        price: 165,
+        description: 'sick ass course',
+        reservationInfo: 'Bookable 30 days in advance. Discounted rates available for resort guests.',
         awesomeLevel: 8,
         address: '456 Elm St, City, Country'
     },
     {
         id: 3,
+        name: 'Course 3',
         image: 'image3.jpg',
         price: 200,
+        description: 'sick ass course',
         reservationInfo: 'Available',
         awesomeLevel: 10,
         address: '789 Oak St, City, Country'
-    }
+    },
+    {
+        id: 4,
+        name: 'Course 3',
+        image: 'image3.jpg',
+        price: 200,
+        description: 'sick ass course',
+        reservationInfo: 'Available',
+        awesomeLevel: 10,
+        address: '789 Oak St, City, Country'
+    },
 ];
 
 export interface Hotel {
