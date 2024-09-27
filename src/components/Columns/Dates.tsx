@@ -8,7 +8,7 @@ const Dates = () => {
       </div>
       <div className='overflow-auto max-h-[600px]'> 
 
-        <img className='bg-gray-500 bg-opacity-40 rounded-lg max-w-full items-center mb-4 border border-slate-600 mx-auto' src='https://png.pngtree.com/png-vector/20231228/ourmid/pngtree-2025-february-monthly-calendar-vector-png-image_11384767.png'></img>
+        <img className='bg-gray-100 bg-opacity-90 rounded-lg max-w-full items-center mb-4 border border-slate-600 mx-auto' src='https://png.pngtree.com/png-vector/20231228/ourmid/pngtree-2025-february-monthly-calendar-vector-png-image_11384767.png'></img>
 
         {dates.map((date) => (
           <div key={date.id} className="border border-slate-600 rounded-md mb-4 bg-gray-50 bg-opacity-15">
