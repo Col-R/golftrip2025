@@ -1,10 +1,22 @@
 import {hotels} from '../../data.ts'
+import {useState} from 'react'
+import { ChevronDown , ChevronUp } from 'lucide-react';
 
 const Hotels = () => {
+
+
+  const [collapsed, setCollapsed] = useState(true)
+
+  const clickHandler = () => {
+    setCollapsed((prev) => !prev)
+  }
   return (
     <div className='flex flex-col '>
-    <h1 className='bg-transparent'>Hotels</h1>
-      <div className='overflow-auto max-h-[600px]'> 
+      <div className='flex flex-row justify-between items-center'>
+        <h1 className='bg-transparent'>Hotels</h1>
+        {collapsed ? <ChevronDown onClick={clickHandler} className='cursor-pointer w-12 h-auto'/> : <ChevronUp onClick={clickHandler} className='cursor-pointer w-12 h-auto'/>}
+      </div>
+      <div className= {`overflow-auto transition-all duration-300 ease-in-out transform ${collapsed ? 'max-h-0 opacity-0' : 'max-h-[600px]'}`}> 
         {hotels.map((hotel) => (
           <div key={hotel.id} className="border border-slate-600 rounded-md mb-4 bg-gray-50 bg-opacity-15">
               <img src = {hotel.image} className="max-w-full h-auto object-center"></img>

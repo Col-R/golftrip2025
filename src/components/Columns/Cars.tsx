@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { cars } from '../../data.ts'
+import { ChevronDown , ChevronUp } from 'lucide-react';
 
 
 
@@ -7,6 +8,11 @@ import { cars } from '../../data.ts'
 
 
 const Cars = () => {
+  const [collapsed, setCollapsed] = useState(true)
+
+  const clickHandler = () => {
+    setCollapsed((prev) => !prev)
+  }
 
   const [displayAscending, setDisplayAscending] = useState(true);
 
@@ -22,9 +28,10 @@ const Cars = () => {
     <div className='flex flex-col'>
       <div className='flex flex-row justify-between'>
         <h1 className='bg-transparent'>Cars</h1>
-        <button className='font-bold' onClick={sortChanger}>Sort by Price</button>
+        {!collapsed && <button className='font-bold' onClick={sortChanger}>Sort by Price</button>}
+        {collapsed ? <ChevronDown onClick={clickHandler} className='cursor-pointer w-12 h-auto'/> : <ChevronUp onClick={clickHandler} className='cursor-pointer w-12 h-auto'/>}
       </div>
-      <div className='overflow-auto max-h-[600px]'> 
+      <div className= {`overflow-auto transition-all duration-300 ease-in-out transform ${collapsed ? 'max-h-0 opacity-0' : 'max-h-[600px]'}`}> 
 
         {sortedCars.map((car) => (
           <div key={car.id} className="border border-slate-600 rounded-md mb-4 bg-gray-50 bg-opacity-15">
@@ -40,7 +47,7 @@ const Cars = () => {
         ))}
 
       </div>
-    </div>
+    </div> 
   )
 }
 

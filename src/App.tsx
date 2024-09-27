@@ -15,11 +15,11 @@ function App() {
     <div className='relative h-screen overflow-hidden'>
       <div id='background'>
         <div className='fixed inset-0 bg-black opacity-50'></div>
-        <div className="relative z-10 h-full overflow-y-auto p-8">
-        <Header />
-        <Summary />
-        <Body />
-        </div>
+          <div className="relative z-10 h-full overflow-auto sm:overflow-y-none p-8 sm:p-0">
+            <Header />
+            <Summary />
+            <Body />
+          </div>
       </div>
     </div>
   )

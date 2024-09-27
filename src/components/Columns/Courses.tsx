@@ -6,7 +6,7 @@ import { ChevronDown , ChevronUp } from 'lucide-react';
 
 const Courses = () => {
 
-  const [collapsed, setCollapsed] = useState(true)
+  const [collapsed, setCollapsed] = useState(false)
 
   const clickHandler = () => {
     setCollapsed((prev) => !prev)
@@ -14,12 +14,12 @@ const Courses = () => {
 
   return (
     <div className='flex flex-col'>
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row justify-between items-center'>
         <h1 className='bg-transparent'>Courses</h1>
-        {collapsed ? <ChevronDown /> : <ChevronUp onClick={clickHandler}/>}
-
+        {collapsed ? <ChevronDown onClick={clickHandler} className='cursor-pointer w-12 h-auto'/> : <ChevronUp onClick={clickHandler} className='cursor-pointer w-12 h-auto'/>}
       </div>
-        {collapsed && <div className='overflow-y-scroll max-h-[600px]'>
+      
+      <div className= {`overflow-auto transition-all duration-300 ease-in-out transform ${collapsed ? 'max-h-0 opacity-0' : 'max-h-[600px]'}`}> 
           {courses.map((course) => (
             <div key={course.id} className="border border-slate-600 rounded-md mb-4 bg-gray-50 bg-opacity-15">
                 <img src = {course.image} className="max-w-full h-auto object-center 
@@ -49,7 +49,7 @@ const Courses = () => {
               </div>
             </div>
           ))}
-        </div> }
+        </div> 
     </div>
   )
 }
