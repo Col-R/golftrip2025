@@ -122,41 +122,47 @@ export const hotels: Hotel[] = [
 ];
 
 export interface DateSpan {
-    startDate: string;
-    endDate: string;
-}
-
-
-
-export interface Dates {
     id: number;
-    dateSpan: DateSpan;
+    startDate: Date;
+    endDate: Date;
 }
 
-export const dates: Dates[] = [
+
+
+
+
+export const dates: DateSpan[] = [
     {
         id: 1,
-        dateSpan: {
-            startDate: '2025-06-01',
-            endDate: '2025-06-10'
-        },
-
+        startDate: new Date('2025-02-06'),
+        endDate: new Date('2025-02-09')
     },
     {
         id: 2,
-        dateSpan: {
-            startDate: '2025-07-01',
-            endDate: '2025-07-15'
-        },
-
+        startDate: new Date('2025-02-07'),
+        endDate: new Date('2025-02-10')
     },
     {
         id: 3,
-        dateSpan: {
-            startDate: '2025-08-01',
-            endDate: '2025-08-10'
-        },
-    }
+        startDate: new Date('2025-02-08'),
+        endDate: new Date('2025-02-11')
+    },
+    {
+        id: 4,
+        startDate: new Date('2025-02-20'),
+        endDate: new Date('2025-02-23')
+    },
+    {
+        id: 5,
+        startDate: new Date('2025-02-21'),
+        endDate: new Date('2025-02-24')
+    },
+    {
+        id: 6,
+        startDate: new Date('2025-02-22'),
+        endDate: new Date('2025-02-25')
+    },
+
 ];
 
 export interface Car {
