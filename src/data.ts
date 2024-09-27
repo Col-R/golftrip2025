@@ -95,7 +95,7 @@ export const hotels: Hotel[] = [
         price: 500,
         address: '190 Top Of The Rock Rd, Ridgedale, MO 65739',
         rating: 5,
-        link: 'http://hotelsunshine.com'
+        link: 'https://bigcedar.com/'
     },
     {
         id: 3,
@@ -162,6 +162,8 @@ export const dates: Dates[] = [
 export interface Car {
     id: number;
     type: string;
+    make: string;
+    model: string;
     price: number;
     image: string;
 }
@@ -169,22 +171,44 @@ export interface Car {
 export const cars: Car[] = [
     {
         id: 1,
-        type: 'SUV',
-        price: 30000,
-        image: 'suv.jpg'
+        type: 'Compact SUV',
+        make: 'Hyundai',
+        model: 'Kona',
+        price: 92,
+        image: 'https://assets.gcs.ehi.com/content/national/data/vehicle/bookingCountries/US/SUVS/CFAR.doi.132.high.imageSmallSideProfileNodePath.png/1722271304686.png'
     },
     {
         id: 2,
-        type: 'Sedan',
-        price: 25000,
-        image: 'sedan.jpg'
+        type: 'Minivan',
+        make: 'Chrysler',
+        model: 'Pacifica',
+        price: 82,
+        image: 'https://assets.gcs.ehi.com/content/national/data/vehicle/bookingCountries/US/VANS/MVAR.doi.132.high.imageSmallSideProfileNodePath.png/1618263096675.png'
     },
     {
         id: 3,
-        type: 'Convertible',
-        price: 45000,
-        image: 'convertible.jpg'
-    }
+        type: 'Standard SUV',
+        make: 'Chevrolet',
+        model: 'Equinox',
+        price: 94.50,
+        image: 'https://assets.gcs.ehi.com/content/national/data/vehicle/bookingCountries/US/SUVS/SFAR.doi.132.high.imageSmallSideProfileNodePath.png/1722271524866.png'
+    },
+    {
+        id: 4,
+        type: 'Midsize SUV',
+        make: 'Nissan ',
+        model: 'Rogue',
+        price: 95,
+        image: 'https://assets.gcs.ehi.com/content/national/data/vehicle/bookingCountries/US/SUVS/IFAR.doi.132.high.imageSmallSideProfileNodePath.png/1714578511986.png'
+    },
+    {
+        id: 5,
+        type: 'Pickup',
+        make: 'Ford ',
+        model: 'F-150',
+        price: 85,
+        image: 'https://assets.gcs.ehi.com/content/national/data/vehicle/bookingCountries/US/TRUCKS/PPBR.doi.132.high.imageSmallSideProfileNodePath.png/1714590520061.png'
+    },
 ];
 
 
