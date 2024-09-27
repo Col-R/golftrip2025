@@ -90,30 +90,33 @@ export const hotels: Hotel[] = [
     {
         id: 2,
         name: 'Big Cedar Lodge',
-        image: 'https://www.thesunshinehotel.com/wp-content/uploads/2019/12/Hotel-Sunshine-Exterior-1.jpg',
-        price: 120,
-        address: '321 Beach Rd, City, Country',
+        thoughts: "This is definitely the priciest option, but it's also right next to like 5 golf courses. 2 bedroom with kitchenette and a sleeper sofa. Luxurious, convenient. Go for this if we want to ball out a bit.",
+        image: 'https://res.cloudinary.com/resortsandlodges/image/fetch/w_800,h_520,c_fill/https://media.travelnetsolutions.com/1e5d2c1592e6a237d3639ef10dffc2a2/original.jpg',
+        price: 500,
+        address: '190 Top Of The Rock Rd, Ridgedale, MO 65739',
         rating: 5,
         link: 'http://hotelsunshine.com'
     },
     {
         id: 3,
         name: 'Still Waters Resort',
+        thoughts: "This is a decent option, but it's a bit further from the golf courses. 3 bedroom with a jacuzzi that could come in clutch after a long day on the course.",
         image: 'https://images.trvl-media.com/hotels/1000000/430000/425400/425339/74e518d1_z.jpg',
-        price: 161,
+        price: 225,
         address: '21 Stillwater, Branson, MO',
         rating: 3,
         link: 'https://www.stillwatersresort.com/'
     },
 
     {
-        id: 5,
+        id: 4,
         name: 'Club Wyndham Branson at The Meadows',
-        image: 'https://www.thesunshinehotel.com/wp-content/uploads/2019/12/Hotel-Sunshine-Exterior-1.jpg',
+        thoughts: 'I fuck with this one heavily. Definitely a no-frills thing, 2 bedroom condo with a sleeper sofa. About 20 mins from the golf course. Excellent price for what you get, and Wyndham is legit. Kai and I stayed at one just like this in Myrtle and it was pimp.',
+        image: 'https://clubwyndham.wyndhamdestinations.com/content/dam/wyndham/wyndham-vacation-clubs/resorts/cw-branson-meadows/standard/002-branson-meadows-gallery-standard-overview.jpg',
         price: 141,
         address: '110 Willow Bend Dr, Branson, MO',
         rating: 3.5,
-        link: 'http://hotelsunshine.com'
+        link: 'https://clubwyndham.wyndhamdestinations.com/us/en/resorts/wyndham-hotels-resorts/united-states-of-america/missouri/branson/club-wyndham-branson-at-the-meadows?msockid=36c2c07235fc6a043b01cdef34546be9'
     },
 
 ];

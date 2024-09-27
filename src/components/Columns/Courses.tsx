@@ -7,7 +7,7 @@ const Courses = () => {
   return (
     <div className='flex flex-col'>
       <h1 className='bg-transparent'>Courses</h1>
-        <div className=''>
+        <div className='overflow-y-scroll max-h-[600px]'>
           {courses.map((course) => (
             <div key={course.id} className="border border-slate-600 rounded-md mb-4 bg-gray-50 bg-opacity-15">
                 <img src = {course.image} className="max-w-full h-auto object-center 
